@@ -6,10 +6,33 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-**Large-scale Biological Network Analysis and Visualization Using CyVerse Discovery Enviornment Apps**
+**Introduction**
 =================
 
-In this tutorial, we will analyze a sample dataset of five transcription factors that control the rate of ~14k genes.
+Various types of molecular interaction webs (including protein–protein interaction, metabolic, signaling and transcription-regulatory networks) are principal determinants of the system-scale behaviour of the cell. Recent advances and falling costs of technologies have enabled researchers to catalogue the component molecules of these networks not only at a genome-wide scale but also under a large number of different experimental conditions (e.g. time points, cell types, stimuli and treatments). 
+
+We will analyze a sample dataset of five transcription factors that control the rate of ~14k genes. Command-line expertise is not required to follow most of this tutorial.
+
+----
+
+Learning Objectives
+--------------------
+
+- What a biological network is
+- Why networks are difficult to visualize and understand
+- Powerful combination of tools and techniques to do network analysis
+- How to manipulate, slice, and dice networks in order to analyze large networks
+- Using CyVerse Discovery Environment apps to do network analysis and visualization
+
+----
+
+Step-by-step Tutorial:
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. toctree::
+  :titlesonly:
+
+  step1.rst
 
 ----
 
