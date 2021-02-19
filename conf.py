@@ -10,7 +10,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 from misc.cyverse_sphinx_conf import *  # noqa
 
-project = 'YOUR PROJECT NAME HERE as topic_tutorial'
+project = 'arge-scale Biological Network Analysis'
 copyright = '2020, CyVerse'
 author = 'CyVerse'
 version = '2.0'

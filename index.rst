@@ -6,20 +6,10 @@
 |Home_Icon|_
 `Learning Center Home <http://learning.cyverse.org/>`_
 
-**TUTORIAL NAME**
+**Large-scale Biological Network Analysis and Visualization Using CyVerse Discovery Enviornment Apps**
 =================
 
-..
-    #### Comment: Use short, imperative titles e.g. Upload and share data, uploading and
-    sharing data ####
-
-Goal
-----
-
-..
-    #### Comment: Avoid covering upstream and downstream steps that are not explicitly and
-    necessarily part of the tutorial - write or link to separate quick
-    starts/tutorials for those parts ####
+In this tutorial, we will analyze a sample dataset of five transcription factors that control the rate of ~14k genes.
 
 ----
 
@@ -35,9 +25,9 @@ Who to contact if this guide needs fixing. You can also email
     * - Maintainer
       - Institution
       - Contact
-    * - Your Name
+    * - Reetu Tuteja
       - CyVerse / UA
-      - Yourname@email.com
+      - reetututeja@cyverse.org
 ----
 
 .. toctree::
@@ -45,7 +35,7 @@ Who to contact if this guide needs fixing. You can also email
 
 	Tutorial home <self>
 	Step One <step1.rst>
-	Delete this example guide page <example_directives_delete.rst>
+	
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
 	you have an additional page called 'Step One' with content located in 'step1.rst'
@@ -71,9 +61,6 @@ Downloads, access, and services
       - Link/Download
     * - CyVerse account
       - You will need a CyVerse account to complete this exercise
-      - |CyVerse User Portal|
-    * - Atmosphere access
-      - You must have access to Atmosphere
       - |CyVerse User Portal|
     * - Cyberduck
       - Standalone software for upload/download to Data Store
@@ -102,23 +89,6 @@ Platform(s)
       - Web/Point-and-click
       - |Discovery Environment|
       - |Discovery Environment Guide|
-    * - Atmosphere
-      - Command line (ssh) and/or Desktop (VNC)
-      - |Atmosphere|
-      - |Atmosphere Guide|
-    * - BisQue
-      - Web/Point-and-click and/or Command-line (API)
-      - |BisQue|
-      - |BisQue Manual|
-      - (See Manual)
-    * - DNA Subway
-      - Web/Point-and-click
-      - |DNA Subway|
-      - |DNA Subway Guide|
-    * - SciApps
-      - Command-line (API)
-      - |SciApps|
-      - |SciApps Guide|
 
 Application(s) used
 ~~~~~~~~~~~~~~~~~~~
@@ -140,23 +110,6 @@ Application(s) used
       - Multiple sequence aligner
       -	|CyVerse_launch|
       - |Original App Documentation|
-
-
-**Atmosphere Image(s):**
-
-.. list-table::
-    :header-rows: 1
-
-    * - Image name
-      - Version
-      - Description
-      - Link
-      - Notes/other links
-    * - CyVerse CentOS 6.8 GUI Base
-      - 1.0
-      - base image CentOS 6.8 with GNOME GUI
-      - |CyVerse_launch|
-      -
 
 
 
