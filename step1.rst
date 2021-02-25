@@ -7,77 +7,64 @@
 `Learning Center Home <http://learning.cyverse.org/>`_
 
 
-Section Name
--------------
+*Intro to DOT language*
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Description:**
+DOT is the graph description language. DOT describes three main kinds of objects: graphs (or network), nodes, and edges. Nodes represent units in the network, while edges represent the connections between the nodes of the network. The node of a biological network can represent genes, proteins, mRNAs, protein/protein complexes or cellular processes. DOT graphs are typically files with the filename extension gv or dot.
 
-..
-	#### Comment: short text description goes here ####
+DOT can be used to describe both undirected (edges with no orientations) and directed (edges with orientations) graphs. Protein–protein and genetic interactions are usually represented with an undirected network, whereas transcription factor binding, phosphorylation, and metabolic networks have directionality built into their interactions. 
 
-----
+A DOT file for an undirected graph begins with the keyword graph followed by the name of the graph. An undirected edge between two nodes is specified using two dashes (--). Below is an example DOT file for a simple undirected graph.
 
-**Input Data:**
+.. code::
 
-.. list-table::
-    :header-rows: 1
+  graph graphname {
+        1 -- 2;
+        3 -- 2;
+        4 -- 1;
+        2 -- 5 -- 4;
+  }
 
-    * - Input
-      - Description
-      - Example
-    * -
-      -
-      -
+A directed graph begins with the keyword digraph followed by the name of the graph. A directed edge between two nodes is specified using a dash and arrow (->). Below is an example DOT file for a simple directed graph. 
 
-*Descriptive Steps*
+.. code::
+
+  digraph graphname {
+          a -> b;
+          a -> c -> d;
+          c -> e;
+  }
+
+Please check more examples DOT files `here <https://graphs.grevian.org/example>`_
+
+
+
+*Prepare your data*
 ~~~~~~~~~~~~~~~~~~~
 
-.. 	#### Comment: Step title should be descriptive (i.e. Cleaning Read data) ###
+
+*Run sfdp*
+~~~~~~~~~~~~~
 
 
-1. Replace the text below with your own
+*Node attribute manipulation*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-2. Use the image src in this link to link to
-
-   - A DE App: |CyVerse_launch|
-   - An Atmosphere image: |CyVerse_launch|
-
-3. Click :guilabel:`&Cancel` to continue is how you can show a button
-
-4. Tell the user to choose an appropriate value for a setting
-
-   .. admonition:: sample-data
-
-     Tell them if they are following with our sample data exactly
-     what value to choose
+*Edge attribute manipulation*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-..
-	#### Comment: Suggested style guide:
-	1. Steps begin with a verb or preposition: Click on... OR Under the "Results Menu"
-	2. Locations of files listed parenthetically, separated by carets, ultimate object in bold
-	(Username > analyses > *output*)
-	3. Buttons and/or keywords in bold: Click on **Apps** OR select **Arabidopsis**
-	4. Primary menu titles in double quotes: Under "Input" choose...
-	5. Secondary menu titles or headers in single quotes: For the 'Select Input' option choose...
-	####
-
-**Output/Results**
-
-.. list-table::
-    :header-rows: 1
-
-    * - Output
-      - Description
-      - Example
-    * -
-      -
-      -
+*Subgraph Manipulation*
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-----
+*Clustering*
+~~~~~~~~~~~~~
 
-**Description of output and results**
+
+*How to perform network analysis using Discovery Environment apps*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 
 ----

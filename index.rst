@@ -11,28 +11,18 @@
 
 Various types of molecular interaction webs (including protein–protein interaction, metabolic, signaling and transcription-regulatory networks) are principal determinants of the system-scale behaviour of the cell. Recent advances and falling costs of technologies have enabled researchers to catalogue the component molecules of these networks not only at a genome-wide scale but also under a large number of different experimental conditions (e.g. time points, cell types, stimuli and treatments). 
 
-We will analyze a sample dataset of five transcription factors that control the rate of ~14k genes. Command-line expertise is not required to follow most of this tutorial.
+In this tutorial, we will use Discovery Environment apps to analyze a sample dataset of five transcription factors that control the rate of ~14k genes. Command-line expertise is not required to follow most of this tutorial.
 
 ----
 
 Learning Objectives
 --------------------
 
-- What a biological network is
+- Intro to network analysis and visualization
 - Why networks are difficult to visualize and understand
 - Powerful combination of tools and techniques to do network analysis
 - How to manipulate, slice, and dice networks in order to analyze large networks
 - Using CyVerse Discovery Environment apps to do network analysis and visualization
-
-----
-
-Step-by-step Tutorial:
-~~~~~~~~~~~~~~~~~~~~~~~
-
-.. toctree::
-  :titlesonly:
-
-  step1.rst
 
 ----
 
@@ -48,6 +38,9 @@ Who to contact if this guide needs fixing. You can also email
     * - Maintainer
       - Institution
       - Contact
+    * - Iqbal Hossain
+      - CyVerse / UA
+      - hossain@arizona.edu
     * - Reetu Tuteja
       - CyVerse / UA
       - reetututeja@cyverse.org
