@@ -9,9 +9,9 @@
 **Introduction**
 =================
 
-Various types of molecular interaction webs (including protein–protein interaction, metabolic, signaling and transcription-regulatory networks) are principal determinants of the system-scale behaviour of the cell. Recent advances and falling costs of technologies have enabled researchers to catalogue the component molecules of these networks not only at a genome-wide scale but also under a large number of different experimental conditions (e.g. time points, cell types, stimuli and treatments). 
+Various types of molecular interactions are principal determinants of the system-scale behaviour of the cell. These interactions include protein–protein interaction, metabolic, signaling and transcription-regulatory networks. Recent innovation and continues falling costs of technologies have enabled researchers to catalogue the component molecules of these networks not only at a genome-wide scale but also under a large number of different experimental conditions (e.g. time points, cell types, stimuli and treatments). In this tutorial, we will use Discovery Environment apps to analyze a sample dataset of five transcription factors that control the rate of ~14k genes. 
 
-In this tutorial, we will use Discovery Environment apps to analyze a sample dataset of five transcription factors that control the rate of ~14k genes. Command-line expertise is not required to follow most of this tutorial.
+Some experience with python programming and command-line is required to follow this tutorial.
 
 ----
 
@@ -49,8 +49,9 @@ Who to contact if this guide needs fixing. You can also email
 .. toctree::
 	:maxdepth: 2
 
-	Tutorial home <self>
 	Step One <step1.rst>
+  Perform network analysis using Discovery Environment VICE app <step2.rst>
+  Further Reading <step3.rst>
 	
 ..
 	#### Comment:This tutorial can have multiple pages. The table of contents assumes
@@ -121,9 +122,9 @@ Application(s) used
       - Description
       - App link
       - Notes/other links
-    * - Muscle
-      - 3.8.31
-      - Multiple sequence aligner
+    * - Jupyterlab-GraphViz
+      - 1.0
+      - JupyterLab with Graphviz package creation and rendering of graph descriptions
       -	|CyVerse_launch|
       - |Original App Documentation|
 
@@ -144,10 +145,10 @@ Input and example data
       - Format
       - Preparation/Notes
       - Example Data
-    * -
-      -
-      -
-      -
+    * - 
+      - 
+      - Data downloaded from ConnecTF
+      - iplantcollaborative > example_data > Network_analysis_webinar
 
 ----
 
@@ -215,5 +216,9 @@ Input and example data
    <a href="https://cyberduck.io/" target="blank">Download Cyberduck</a>
 
 .. |Original App Documentation|  raw:: html
+
+   <a href="http://www.drive5.com/muscle/manual/" target="blank">Original App Documentation</a>
+
+.. |CyVerse_launch| raw:: html
 
    <a href="http://www.drive5.com/muscle/manual/" target="blank">Original App Documentation</a>

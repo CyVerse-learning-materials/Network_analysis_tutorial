@@ -22,8 +22,13 @@ A DOT file for an undirected graph begins with the keyword graph followed by the
         1 -- 2;
         3 -- 2;
         4 -- 1;
-        2 -- 5 -- 4;
+        2 -- 5;
+        5 -- 4;
   }
+
+.. image:: ./img/undirected_network.png
+   :scale: 30 %
+
 
 A directed graph begins with the keyword digraph followed by the name of the graph. A directed edge between two nodes is specified using a dash and arrow (->). Below is an example DOT file for a simple directed graph. 
 
@@ -31,17 +36,60 @@ A directed graph begins with the keyword digraph followed by the name of the gra
 
   digraph graphname {
           a -> b;
-          a -> c -> d;
+          a -> c; 
+          c -> d;
           c -> e;
   }
 
-Please check more examples DOT files `here <https://graphs.grevian.org/example>`_
 
+.. image:: ./img/directed_network.png
+   :scale: 30 %
+
+
+Please check more examples DOT files `here <https://graphs.grevian.org/example>`_
 
 
 *Prepare your data*
 ~~~~~~~~~~~~~~~~~~~
 
+The example data for this tutorial is downloaded from the `ConnecTF database <https://connectf.org/>`_ that contains transcription factor (TF)-target interactions for ~ 616 TFs from three different plant species (Arabidopsis, maize and rice). The example input file is in json format, containing interactions for 5 Arabidopsis TFs (14K nodes and 23K edges). Other common interactions file formats for network visualization tools are Simple interaction file (.sif), Graph Markup Language (.gml) and Nested Network Format (.nnf).
+
+**Input Data:**
+
+.. list-table::
+    :header-rows: 1
+
+    * - Input
+      - Description
+      - Location
+    * - query.cyjs
+      - Example interactions input file in cytoscape json format
+      - iplantcollaborative > example_data > Network_analysis_webinar
+
+Here is a sample snippet to convert interactions file in json format to dot using NetworkX Python package:
+
+.. code::
+
+  import networkx as nx
+  import os, json
+  from networkx.drawing.nx_agraph import write_dot
+
+  json_file = open('query.cyjs')
+  data = json.load(json_file)
+
+  G = nx.Graph()
+  for n in data['elements']['nodes']:
+    ntype = n['data']["type"]
+    if n['data']["type"] == "": ntype = "None"
+    G.add_node(n['data']["id"], type=ntype, label=n['data']["name"])
+
+  for n in data['elements']['edges']:
+    G.add_edge(n['data']["source"], n['data']["target"])
+
+  print(nx.info(G))
+  out_file_name="network.dot"
+  write_dot(G, out_file_name)
+  
 
 *Run sfdp*
 ~~~~~~~~~~~~~
@@ -61,9 +109,6 @@ Please check more examples DOT files `here <https://graphs.grevian.org/example>`
 *Clustering*
 ~~~~~~~~~~~~~
 
-
-*How to perform network analysis using Discovery Environment apps*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
