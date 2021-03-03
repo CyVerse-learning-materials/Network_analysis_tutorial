@@ -89,14 +89,51 @@ Here is a sample snippet to convert interactions file in json format to dot usin
   print(nx.info(G))
   out_file_name="network.dot"
   write_dot(G, out_file_name)
-  
 
 *Run sfdp*
 ~~~~~~~~~~~~~
+Scalable Force Directed Placement (sfdp) algorithm is part of Graphviz software. It's a fast multilevel force directed algorithm that efficiently layout very large graphs in a reasonably short time. Check more about sfdp and Graphviz `here <https://graphviz.org/pdf/dot.1.pdf>`_.
 
+Here is the sfdp command to create layout for dot file generated in the previous step: 
+
+.. code::
+    
+    sfdp -Goverlap=prism -Nshape=point -Goutputorder=edgesfirst -Tsvg network.dot -O
+
+.. image:: ./img/network.dot.svg
+   :scale: 10 %
 
 *Node attribute manipulation*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+NetworkX library allows to attach attributes such as weight, labels, color to networks, nodes or edges. Attributes are provided in key/value pairs. Check more about adding attributes using NetworkX `here <https://networkx.org/documentation/stable/tutorial.html#adding-attributes-to-graphs-nodes-and-edges>`_.
+
+Here is a snippet adding node colors to network generated in previous step:
+
+.. code::
+
+  import networkx as nx 
+  import os
+  from networkx.drawing.nx_agraph import write_dot
+  import pygraphviz as pgv 
+
+  G=nx.Graph(pgv.AGraph("network.dot"))
+
+  color={"METABOLIC":"red", "OTHER_RNA":"green","TXNFACTOR":"blue","PRE_TRNA":"yellow"}
+  #Set color on node based on node type
+  for n in G.nodes():
+      if G.nodes[n]['type'] in color:
+        G.nodes[n]['color']=color[G.nodes[n]['type']]
+      else:
+        G.nodes[n]['color']='black'
+
+  out_file_name="network3.dot"
+  write_dot(G, out_file_name)
+  os.system("sfdp -Goverlap=prism -Nshape=point -Goutputorder=edgesfirst -Tsvg "+out_file_name+" -O")
+
+.. image:: ./img/network3.dot.svg
+   :scale: 10 %
+
 
 *Edge attribute manipulation*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
