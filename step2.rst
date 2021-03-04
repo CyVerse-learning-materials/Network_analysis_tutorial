@@ -10,27 +10,19 @@
 **Perform network analysis using Discovery Environment VICE app**
 -----------------------------------------------------------------
 
-1. Login and launch the Jupyter Lab Graphviz app
-===================================================
+**1. Launch the Jupyter Lab Graphviz app**
 
-First login to `CyVerse DE <https://de.cyverse.org/de/>`_
+After you login to `DE <https://de.cyverse.org/de/>`_, open the Apps window and search for Jupyter Lab with key word `Jupyterlab-GraphViz` or launch the app with webinar example scripts and data |graphviz_app|
 
-After you login to DE, open the Apps window and search for Jupyter Lab with key word `Jupyterlab-GraphViz` or launch the app with webinar example scripts and data |graphviz_app|
-
-2. Navigate to JupyterLab url
-==============================
+**2. Navigate to the JupyterLab url**
 
 Unlike regular DE apps once the analysis starts running you will get an url. Click on your notifications, and then by clicking on the "Access your running Analysis here" url. You will be automatically redirected to the app after it finishes the setting phase.
 
 .. raw:: html
 
-   <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/share/e8790339ccc949ed9e3184f11f650836" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+   <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/e8790339ccc949ed9e3184f11f650836" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-The tutorial guides you how to use
-
-3. 
-
-
+Video tutorial for using graphviz VICE app in discovery environment. 
 
 
 ----
