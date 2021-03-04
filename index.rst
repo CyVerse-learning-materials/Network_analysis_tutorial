@@ -124,7 +124,7 @@ Application(s) used
       - Notes/other links
     * - Jupyterlab-GraphViz
       - 1.0
-      - JupyterLab with Graphviz package creation and rendering of graph descriptions
+      - JupyterLab with Graphviz package 
       -	|CyVerse_launch|
       - |Original App Documentation|
 
@@ -221,4 +221,4 @@ Input and example data
 
 .. |CyVerse_launch| raw:: html
 
-   <a href="http://www.drive5.com/muscle/manual/" target="blank">Original App Documentation</a>
+   <a href="https://de.cyverse.org/de/?type=apps&app-id=ccb0264c-6c8e-11eb-94c7-008cfa5ae621&system-id=de" target="blank">CyVerse launch</a>
