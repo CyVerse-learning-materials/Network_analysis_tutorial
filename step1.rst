@@ -143,8 +143,6 @@ Here is a snippet adding node colors to network generated in previous step:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-*Clustering*
-~~~~~~~~~~~~~
 
 
 

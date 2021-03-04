@@ -12,7 +12,7 @@
 
 **1. Launch the Jupyter Lab Graphviz app**
 
-After you login to `DE <https://de.cyverse.org/de/>`_, open the Apps window and search for Jupyter Lab with key word `Jupyterlab-GraphViz` or launch the app with webinar example scripts and data |graphviz_app|
+After you login to `DE <https://de2.cyverse.org/>`_, open the Apps window and search for Jupyter Lab with key word `Jupyterlab-GraphViz` or launch the app with webinar example scripts and data |graphviz_app|
 
 **2. Navigate to the JupyterLab url**
 
@@ -22,7 +22,7 @@ Unlike regular DE apps once the analysis starts running you will get an url. Cli
 
    <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/e8790339ccc949ed9e3184f11f650836" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-Video tutorial for using graphviz VICE app in discovery environment. 
+The video tutorial guides how to use the graphviz VICE app in discovery environment. 
 
 
 ----
