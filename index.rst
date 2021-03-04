@@ -9,7 +9,7 @@
 **Introduction**
 =================
 
-Various types of molecular interactions are principal determinants of the system-scale behaviour of the cell. These interactions include protein–protein interaction, metabolic, signaling and transcription-regulatory networks. Recent innovation and continues falling costs of technologies have enabled researchers to catalogue the component molecules of these networks not only at a genome-wide scale but also under a large number of different experimental conditions (e.g. time points, cell types, stimuli and treatments). In this tutorial, we will use Discovery Environment apps to analyze a sample dataset of five transcription factors that control the rate of ~14k genes. 
+Various types of molecular interactions are principal determinants of the system-scale behaviour of the cell. These interactions include protein–protein interaction, metabolic, signaling and transcription-regulatory networks. Recent innovations and continues falling costs of technologies have enabled researchers to catalogue the component molecules of these networks not only at a genome-wide scale but also under a large number of different experimental conditions (e.g. time points, cell types, stimuli and treatments). In this tutorial, we will use Discovery Environment apps to analyze a sample dataset of five transcription factors that control the rate of ~14k genes. 
 
 Some experience with python programming and command-line is required to follow this tutorial. Download code and sample data for this tutorial from the `github repo <https://github.com/enggiqbal/Webinar-NetworkAnalysis.git>`_.
 
