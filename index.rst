@@ -145,8 +145,8 @@ Input and example data
       - Format
       - Preparation/Notes
       - Example Data
-    * - 
-      - 
+    * - query.cyjs
+      - Cytoscape json
       - Data downloaded from ConnecTF
       - iplantcollaborative > example_data > Network_analysis_webinar
 
@@ -217,7 +217,7 @@ Input and example data
 
 .. |Original App Documentation|  raw:: html
 
-   <a href="http://www.drive5.com/muscle/manual/" target="blank">Original App Documentation</a>
+   <a href="https://cyverse-network-analysis-tutorial.readthedocs-hosted.com/en/latest/step2.html" target="blank">Original App Documentation</a>
 
 .. |CyVerse_launch| raw:: html
 
