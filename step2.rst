@@ -22,6 +22,12 @@ After you login to DE, open the Apps window and search for Jupyter Lab with key 
 
 Unlike regular DE apps once the analysis starts running you will get an url. Click on your notifications, and then by clicking on the "Access your running Analysis here" url. You will be automatically redirected to the app after it finishes the setting phase.
 
+.. raw:: html
+
+   <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/share/e8790339ccc949ed9e3184f11f650836" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+The tutorial guides you how to use
+
 3. 
 
 
